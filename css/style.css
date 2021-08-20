@@ -1,0 +1,327 @@
+/* ========== Global Settings =========== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Goldman&display=swap');
+
+html {
+    font-size: 62.5%;/*1rem = 10px*/
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    font-size: 1.6rem;
+}
+
+:root {
+    --cor0: #ebe5c5;
+    --cor1: #83e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #063d1e;
+}
+
+/* ========== Header Styling ========== */
+header {
+    width: 100%;
+    background: linear-gradient(to bottom, var(--cor2), var(--cor3) 25%, var(--cor4) 77%);
+    color: #FFF;
+}
+
+header .title {
+    width: 100%;
+    padding-top: 1.5rem;
+}
+
+.title h1 {
+    width: 100%;
+    margin-bottom: 1.5rem;
+    text-align: center; 
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
+    font-size: 5rem;
+    font-weight: 500;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.title p {
+    width: 100%;
+    margin-bottom: 2rem;
+    text-align: center;
+    text-shadow: 1px 1px 1px #111;
+    font-size: 1.7rem;
+}
+
+nav {
+    width: 100%;
+}
+
+nav ul {
+    position: relative;
+}
+
+nav ul .items {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    background: var(--cor4);
+}
+
+nav ul .items li {
+    padding: 1rem 2rem;
+    transition: all 0.3s ease;
+}
+
+nav ul .items li:hover {
+    background: var(--cor3);
+}
+
+nav ul li a {
+    color: #FFF;
+    text-decoration: none;
+    font-weight: 600;
+}
+/* ======= Icone Menu ======= */
+nav ul li.btn {
+ display: none;
+}
+
+nav ul li.btn i {
+    font-size: 2.4rem;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem 1rem;
+    border: 1px solid #FFF;
+    border-radius: 5px;
+}
+
+nav ul li.btn i:hover {
+    background: var(--cor3);
+}
+
+nav ul li.btn i.show:before {
+    content: '\f00d';/*icone de X */
+}
+
+
+/* ========== Main Styling ========== */
+main {
+    width: 100%;
+    background: var(--cor1);   
+    padding-bottom: 2rem; 
+    box-shadow: inset 0px 7px 7px 1px rgba(0,0,0,0.3);
+}
+
+main .articles {
+    margin: auto;
+    max-width: 85rem;
+    background: #FFF;
+    padding: 2rem 1.5rem;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0px 2px 10px 3px rgba(0,0,0,0.3);
+}
+
+.articles h2 {
+    font-family: 'Goldman', sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    color: var(--cor4);
+}
+
+.articles p {
+    text-indent: 3rem;
+    text-align: justify;
+}
+
+main .articles .article h3 {
+    background: linear-gradient(to right, var(--cor1) 0%, #FFF 95%);
+    font-family: 'Goldman', sans-serif;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: var(--cor4);
+    padding-left: 1rem;
+    margin: 1.3rem 0;
+}
+
+main .articles .article img.full {
+    width: 100%;
+    margin: 1.3rem 0;
+}
+
+main .articles .article img.center {
+    display: block;
+    margin: 1.3rem auto;
+}
+
+main .articles .article .video {
+    position: relative;
+    height: 0px;
+    margin: 1.5rem -1.5rem;
+    background: var(--cor4);
+    padding: 2.5rem 3rem;
+    padding-bottom: 59%;
+    
+}
+
+.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+
+main .articles .article .block-content {
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    background: #9bf8c8;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+    overflow: hidden;
+}
+
+.block-content h4 {
+    background: var(--cor3);
+    color: #FFF;
+    margin: -1rem -1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+.block-content .icons-android {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+.icons-android .left, .icons-android .right {
+    flex: 50%;
+}
+
+.icons-android li {
+    list-style-image: url("../images/check.png");
+}
+
+.icons-android li abbr {
+    text-decoration: underline;
+}
+
+main .articles strong, main .articles a {
+    color: var(--cor3);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+
+/* ========== Footer Styling ========== */
+
+footer {
+    width: 100%;
+    background: var(--cor4);
+}
+
+footer p {
+    text-align: center;
+    padding: 1rem 0;
+    color: #FFF;
+    font-weight: 200;
+}
+
+footer p a {
+    text-decoration: none;
+    color: #FFF;
+    font-weight: bold;
+}
+
+
+/* ========== Responsivirity ========== */
+@media screen and (max-width: 650px) {
+    .articles h2 {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    header .title {
+        margin-top: 4.8rem;
+    }
+
+    header .title p {
+        margin-bottom: 0;
+        padding-bottom: 2rem; 
+    }
+
+    nav {
+        z-index: 1;
+        background: var(--cor4);
+        border-bottom: 1.5px solid var(--cor2);
+        position: fixed;
+        top: 0;
+    }
+
+    nav ul li.btn {
+        display: block;
+        text-align: right; 
+        transition: all 0.3s ease;
+    }
+
+    nav ul .items {
+        z-index: -2;
+        position: fixed;
+        background: var(--cor4);
+        top: -30rem;
+        left: 0;
+        width: 100%;
+        display: inline-block;
+        transition: top 0.3s ease;
+    }
+
+    nav ul .items.show {
+        top: 4.75rem;
+    }
+
+    nav ul .items li {
+        text-align: center;
+        margin: 1rem 1.5rem;
+    }
+
+    nav ul .items li a {
+        z-index: -2;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    header .title h1 {
+        font-size: 4rem;
+    }
+
+    header .title p {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    header .title h1 {
+        font-size: 3.5rem;
+    }
+
+    header .title p {
+        font-size: 1.4rem;
+    }
+
+    .articles h2 {
+        font-size: 2.5rem;
+    }
+}
