@@ -2,7 +2,7 @@
 Site sobre a história do Android([conteúdo de referência](https://www.youtube.com/watch?v=YB9c1Zg_Ln4&t=474s)) feito com HTML e CSS, tendo o objetivo de treinar e aprimorar habilidades em HTML, CSS e responsividades de sites.
 
 ## 📷 Demonstration
-<img src="./images" alt="Image de Demostração"> 
+<img src="./images/Demonstration_Android.gif" alt="Image de Demostração"> 
 
 ## 🚀 Technologies
 ✔ HTML
